@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+}
+
+.topo {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+    justify-content: space-between;
+}
+
+.topo .container {
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+
+.topo .container .busca {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    border: 1px solid #eeeeee;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.topo .container .busca textbox {
+    width: 90%;
+    height: 70%;
+}
+
+.topo .container .logo {
+    width: 150px;
+}
+
+.topo .container .perfil {
+    display: flex;
+    width: 100px;
+    border: 1px solid #eeeeee;
+    border-radius: 30px;
+    padding: 5px;    
+}
+
+.topo .container .perfil .menu {
+    height: 20px;
+    margin: auto;
+}
+
+.topo .container .perfil .imagem {
+    height: 40px;
+    margin: auto;
+}
+
+.barraTipos {
+    margin: auto;
+    width: 94%;
+    height: 100px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.barraTipos .tipo {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 200px;
+    text-align: center;
+    filter: contrast(calc(13 / 44));
+}
+
+.barraTipos .tipo:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.barraTipos .tipo .icone {
+    height: 24px;
+    margin: auto;
+}
+
+.lugares {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 1300px) {
+    .lugares {
+        grid-template-columns: repeat(4, 1fr);
+    }    
+}
+
+
+.lugar {
+    margin-top: 20px;
+}
+
+.lugares .imagem {
+    width: 271px;
+    height: 261px;
+    border-radius: 15px;
+}
+
+.lugares .local {
+    font-weight: 800;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.lugares .tipo {
+    color: #717171;
+    margin-top: 5px;
+}
+
+.lugares .periodo {
+    color: #717171;
+}
+
+.lugares .preco {
+    margin-top: 5px;
+}
+
+.rodape {
+    color: #717171;
+    border-top: 1px solid #eeeeee;
+    text-align: center;
+    height: 20px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+}
