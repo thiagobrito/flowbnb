@@ -4,45 +4,65 @@ body {
 
 .topo {
     width: 100%;
+    background-color: white !important;
     height: 100px;
-    display: flex;
-    align-items: center;
     border-bottom: 1px solid #eeeeee;
-    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
 
 .topo .container {
-    width: 90%;
     display: flex;
     margin: auto;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
 }
 
 .topo .container .busca {
-    display: flex;
+    border: 1px solid #eeeeee;
     margin: auto;
     align-items: center;
     width: 400px;
     height: 40px;
-    border: 1px solid #eeeeee;
-    border-radius: 30px;
-    padding: 5px;
+    border-radius: 40px;
+    padding-left: 5px;
 }
 
 .topo .container .busca textbox {
+    border: none;
+    height: 18px;
     width: 90%;
-    height: 70%;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.topo .container .busca .iconeBusca {
+    height: 30px;
 }
 
 .topo .container .logo {
     width: 150px;
+    margin-top: auto;
+}
+
+.topo .container .busca {
+    display: flex;
+    flex-direction: row;
+}
+
+.topo .container .busca:hover {
+    box-shadow: 0px 4px 12px 1px#eeeeee;
+    transition: box-shadow 500ms ease-out 100ms
 }
 
 .topo .container .perfil {
     display: flex;
-    width: 100px;
     border: 1px solid #eeeeee;
-    border-radius: 30px;
-    padding: 5px;    
+    border-radius: 40px;
+    width: 100px;
+    padding: 5px;
+    justify-content: space-between;
 }
 
 .topo .container .perfil .menu {
@@ -52,16 +72,15 @@ body {
 
 .topo .container .perfil .imagem {
     height: 40px;
-    margin: auto;
 }
 
+/* Barra com icones de tipos de lugares */
 .barraTipos {
-    margin: auto;
-    width: 94%;
-    height: 100px;
-    margin-top: 40px;
     display: flex;
     flex-direction: row;
+    margin: auto;
+    margin-top: 40px;
+    width: 94%;
 }
 
 .barraTipos .tipo {
@@ -71,51 +90,50 @@ body {
     max-width: 200px;
     text-align: center;
     filter: contrast(calc(13 / 44));
+    cursor: pointer;
+
+    margin-bottom: 2px;
 }
 
 .barraTipos .tipo:hover {
-    cursor: pointer;
     border-bottom: 2px solid #eeeeee;
+    margin-bottom: 0px;
 }
 
 .barraTipos .tipo .icone {
-    height: 24px;
     margin: auto;
+    height: 24px;
 }
 
+.barraTipos .tipo p {
+    margin-top: 5px;
+}
+
+/* Lugares */
 .lugares {
     width: 90%;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-}
-
-@media (min-width: 1300px) {
-    .lugares {
-        grid-template-columns: repeat(4, 1fr);
-    }    
-}
-
-
-.lugar {
     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .lugares .imagem {
-    width: 271px;
+    width: 275px;
     height: 261px;
     border-radius: 15px;
 }
 
 .lugares .local {
     font-weight: 800;
-    margin-top: 10px;
     font-size: 18px;
+    margin-top: 10px;
 }
 
 .lugares .tipo {
-    color: #717171;
     margin-top: 5px;
+    color: #717171;
 }
 
 .lugares .periodo {
@@ -128,11 +146,11 @@ body {
 
 .rodape {
     color: #717171;
-    border-top: 1px solid #eeeeee;
-    text-align: center;
-    height: 20px;
-    padding: 10px;
-    margin: auto;
-    margin-top: 20px;
     width: 90%;
+    border-top: 1px solid #eeeeee;
+    height: 20px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto auto;
 }
